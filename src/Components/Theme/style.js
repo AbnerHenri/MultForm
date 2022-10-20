@@ -26,6 +26,7 @@ display: flex;
 export const Sidebar = styled.div`
 
 width : 250px;
+height : 80vh;
 border-right: 1px solid #ccc;
 `
 

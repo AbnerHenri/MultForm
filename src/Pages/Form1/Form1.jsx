@@ -9,9 +9,6 @@ function FormOne() {
       <C.Container>
         Passo 1
       </C.Container>
-
-
-      <h1>FFF</h1>
     </Theme>
   );
 }
