@@ -4,11 +4,14 @@ import App from './App'
 import './index.css'
 
 import { BrowserRouter } from 'react-router-dom'
+import { FormProvider } from './Contexts/FormContexts'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <FormProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </FormProvider>
   </React.StrictMode>
 )
