@@ -21,7 +21,6 @@ const FormReducer = (state, action) => {
 
         case 'SET_NAME':
             return {...state, name: action.payload}
-            break;
 
         case 'SET_LEVEL':
             return {...state, level: action.payload}
@@ -37,6 +36,7 @@ const FormReducer = (state, action) => {
     }
 }
 
+
 // Provider
 
 const FormProvider = ({ children }) => {
@@ -44,20 +44,10 @@ const FormProvider = ({ children }) => {
     const [state, dispatch] = useReducer(FormReducer, initialData)
     const value = { state, dispatch }
 
-    return(
+    return (
         <FormContext.Provider value={value}>
             {children}
         </FormContext.Provider>
     )
 }
 
-// Context Hook
-
-const useForm = () => {
-    const context = useContext(FormContext)
-    if(context === undefined){
-        throw new Error('useForm precisa ser usado dentro do FormProvider')
-    }
-
-    return context
-}
