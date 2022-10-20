@@ -1,5 +1,7 @@
 import * as C from './style'
 
+import Header from '../Header/Header'
+
 const Theme = ({ children }) => {
     return(
         <C.Container>

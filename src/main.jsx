@@ -3,15 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-import { BrowserRouter } from 'react-router-dom'
-import { FormProvider } from './Contexts/FormContexts'
+// import { FormProvider } from './Contexts/FormContexts'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FormProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </FormProvider>
+    <App />
   </React.StrictMode>
 )
