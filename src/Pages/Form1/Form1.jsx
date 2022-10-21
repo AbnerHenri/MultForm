@@ -7,7 +7,15 @@ function FormOne() {
   return(
     <Theme>
       <C.Container>
-        Passo 1
+        <h1>Vamos começar com o seu nome</h1>
+        <p>Preencha o campo abaixo</p>
+
+        <hr></hr>
+
+        <label>
+          Seu nome completo
+          <input type={'text'} autofocus />
+        </label>
       </C.Container>
     </Theme>
   );
