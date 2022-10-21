@@ -1,12 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as C from './styles'
 
 import Theme from '../../Components/Theme/Theme';
 
 function FormOne() {
 
-  function nextStep(){
+  const Redirect = useNavigate()
 
+  function nextStep(){
+    Redirect('/step2')
   }
 
   return(
