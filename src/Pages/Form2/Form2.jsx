@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as C from './styles'
 import { useForm } from '../../Contexts/FormContexts'
+import SelectOption from '../../Components/SelectOption/SelectOption';
 
 import Theme from '../../Components/Theme/Theme';
 
@@ -36,6 +37,18 @@ function FormOne() {
       
         <p>Escolha uma das opções abaixo</p>
         <hr></hr>
+
+        <SelectOption 
+          title={'Sou iniciante'} 
+          description={'Iniciei os estudos a poucos meses'} 
+          icon={'😅'}
+        />
+
+        <SelectOption 
+          title={'Sou avançado'}
+          description={'Já programo a mais de 2 anos'}
+          icon={'😎'}
+        />
 
         <C.Button onClick={() => nextStep('/')}>Voltar</C.Button>
         <C.Button onClick={() => nextStep('/step3')}>Próximo</C.Button>

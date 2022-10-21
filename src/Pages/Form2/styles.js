@@ -22,7 +22,7 @@ label {
 }
 
 h1 {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 hr {
@@ -46,7 +46,7 @@ border-radius: 30px;
 width : 150px;
 height : 50px;
 
-margin-top : 70px;
+margin-top : 40px;
 margin-right: 10px;
 font-size : 16px;
 font-weight: 400;
