@@ -14,7 +14,7 @@ const FormContext = createContext()
 
 // Reducer
 
-const FormReducer = (state, action) => {
+export const FormReducer = (state, action) => {
     switch (action.type) {
         case 'SET_CURRENT_STEP':
             return {...state, currentStep: action.payload}
@@ -39,7 +39,7 @@ const FormReducer = (state, action) => {
 
 // Provider
 
-const FormProvider = ({ children }) => {
+export const FormProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(FormReducer, initialData)
     const value = { state, dispatch }
@@ -53,7 +53,7 @@ const FormProvider = ({ children }) => {
 
 // Context Hook
 
-const useForm = () => {
+ export const useForm = () => {
     const context = useContext(FormContext)
     if (context === undefined) {
         throw new Error('useForm precisa ser usado dentro do FormProvider')
