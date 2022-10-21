@@ -11,7 +11,12 @@ function FormOne() {
   const { state, dispatch } = useForm()
 
   function nextStep(){
-    Redirect('/step2')
+    if(state.name !== ''){
+      Redirect('/step2')
+    }else{
+      alert('Preencha os dados necessários')
+    }
+    
   }
 
   function handleName(e){
