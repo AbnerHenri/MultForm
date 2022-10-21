@@ -1,7 +1,7 @@
 import { createContext, useContext, useReducer } from 'react'
 
 const initialData = {
-    currentStep: 0,
+    currentStep: 1,
     name: '',
     level: 0,
     email: '',
