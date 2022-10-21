@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
 
 min-height: 100vh;
-
-background-color: #111111;
 color : #FFFFFF;
+
+background: rgb(68,155,172);
+background: linear-gradient(75deg, rgba(68,155,172,0.865983893557423) 7%, rgba(70,39,171,1) 42%);
 `
 
 export const Area = styled.div`
