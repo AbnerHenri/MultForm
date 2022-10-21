@@ -35,7 +35,7 @@ function FormOne() {
 
       <p>Passo {state.currentStep}/3</p>
 
-        <h1>Qual o seu nível de desenvolvedor</h1>
+        <h2>{state.name}, Qual o seu nível de desenvolvedor</h2>
       
         <p>Escolha uma das opções abaixo</p>
         <hr></hr>
