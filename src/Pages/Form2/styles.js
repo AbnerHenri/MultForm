@@ -41,14 +41,14 @@ background-color: #449bac;
 color : #fff;
 
 border : none;
-border-radius: 20px;
+border-radius: 30px;
 
-width : 200px;
+width : 150px;
 height : 50px;
 
 margin-top : 70px;
 margin-right: 10px;
-font-size : 18px;
+font-size : 16px;
 font-weight: 400;
 letter-spacing: 2px;
 
