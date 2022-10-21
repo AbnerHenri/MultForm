@@ -19,12 +19,14 @@ function FormOne() {
   }, [])
 
   function nextStep(route){
-    if(state.name !== ''){
-      Redirect(route)
-    }else{
-      alert('Preencha os dados necessários')
-    }
-    
+      Redirect(route)    
+  }
+
+  function setLevel(number){
+    dispatch({
+      type : 'SET_LEVEL',
+      payload : number
+    })
   }
 
   return(
@@ -42,12 +44,16 @@ function FormOne() {
           title={'Sou iniciante'} 
           description={'Iniciei os estudos a poucos meses'} 
           icon={'😅'}
+          selected={state.level === 0}
+          onClick={()=> setLevel(0)}
         />
 
         <SelectOption 
           title={'Sou avançado'}
           description={'Já programo a mais de 2 anos'}
           icon={'😎'}
+          selected={state.level === 1}
+          onClick={() => setLevel(1)}
         />
 
         <C.Button onClick={() => nextStep('/')}>Voltar</C.Button>

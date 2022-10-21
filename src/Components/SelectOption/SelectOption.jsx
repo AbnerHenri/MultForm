@@ -3,7 +3,7 @@ import * as C from './style'
 
 function SelectOption(props) {
   return(
-    <C.Container>
+    <C.Container onClick={props.onClick} selected={props.selected} >
         <C.Icon>{props.icon}</C.Icon>
 
         <C.Info>

@@ -15,7 +15,7 @@ export const Container = styled.div`
     align-items: center;
 
     cursor: pointer;
-    opacity: 0.5;
+    opacity: ${(props)=> props.selected ? 1 : 0.5 };
     transition-duration: 500ms;
 
     &:hover {
