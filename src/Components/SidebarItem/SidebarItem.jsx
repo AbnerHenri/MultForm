@@ -14,6 +14,7 @@ function SidebarItem(props) {
             </C.Info>
 
             <C.IconArea>
+                <img src={props.icon} />
                 <C.Point></C.Point>
             </C.IconArea>
         </Link>

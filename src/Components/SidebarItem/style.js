@@ -11,6 +11,9 @@ export const Container = styled.div`
         text-decoration: none;
         color : #fff;
     }
+
+    padding-bottom: 15px;
+    border-bottom: 2px solid #FFF;
 `
 
 export const Info = styled.div`
@@ -37,12 +40,14 @@ export const IconArea = styled.div`
 
     width : 50px;
     height : 50px;
-    border-radius: 50%;
-    background-color: #449bac;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+        width : 85%;
+    }
 `
 
 export const Point = styled.div`
@@ -52,6 +57,6 @@ export const Point = styled.div`
     border : 3px solid #449bac;
     border-radius: 50%;
     margin-left : 30px;
-    margin-right : -80px;
+    margin-right : -37px;
     background-color: rgba(70,39,171,1);
 `

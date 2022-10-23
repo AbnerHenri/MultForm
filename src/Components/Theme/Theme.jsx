@@ -3,6 +3,10 @@ import * as C from './style'
 import Header from '../Header/Header'
 import SidebarItem from '../SidebarItem/SidebarItem'
 
+import Profile from '../../Assets/perfil.png'
+import Email from '../../Assets/o-email.png'
+import Book from '../../Assets/history-book.png'
+
 const Theme = ({ children }) => {
 
 
@@ -16,21 +20,21 @@ const Theme = ({ children }) => {
                         <SidebarItem 
                             title={'Pessoal'} 
                             description={'Se Identifique'} 
-                            icon={'Profile'} 
+                            icon={Profile} 
                             path={'/'} 
                         />
 
                         <SidebarItem 
                             title={'Profissional'} 
                             description={'Seu Nível'} 
-                            icon={'Book'} 
+                            icon={Book} 
                             path={'/step2'} 
                         />
 
                         <SidebarItem 
                             title={'Contatos'}
                             description={'Como te achar?'}
-                            icon={'email'}
+                            icon={Email}
                             path={'/step3'}
                         />
                     </C.Sidebar>
