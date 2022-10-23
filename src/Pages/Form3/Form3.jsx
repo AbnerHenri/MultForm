@@ -54,8 +54,8 @@ function FormOne() {
 
         <hr></hr>
 
-        <C.Input type={'email'} value={state.email} onChange={HandleEmailChange}/>
-        <C.Input type={'url'} value={state.github} onChange={HandleGithubChange} />
+        <C.Input type={'email'} value={state.email} onChange={HandleEmailChange} placeholder={'Qual o seu E-mail?'}/>
+        <C.Input type={'url'} value={state.github} onChange={HandleGithubChange} placeholder={'Qual o seu Github?'}/>
 
         <C.Button onClick={() => nextStep('/step2')}>Voltar</C.Button>
         <C.Button onClick={() => PrintData() }>Enviar</C.Button>

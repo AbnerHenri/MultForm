@@ -22,7 +22,7 @@ label {
 }
 
 h1 {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 hr {
@@ -46,7 +46,7 @@ border-radius: 30px;
 width : 150px;
 height : 50px;
 
-margin-top : 70px;
+margin-top : 20px;
 margin-right: 10px;
 font-size : 16px;
 font-weight: 400;
@@ -57,4 +57,25 @@ cursor: pointer;
 
 export const Input = styled.input`
 
+box-sizing: border-box;
+display : block;
+width : 100%;
+height : 60px;
+margin-bottom: 10px;
+
+background-color: transparent;
+border : 2px solid #449bac;
+border-radius: 10px;
+color : #fff;
+padding-left: 15px;
+opacity: 0.5;
+
+&::placeholder {
+    color : #ccc
+}
+
+&:focus {
+    opacity: 1;
+    outline: 0;
+}
 `
