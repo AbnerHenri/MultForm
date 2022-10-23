@@ -54,3 +54,7 @@ letter-spacing: 2px;
 
 cursor: pointer;
 `
+
+export const Input = styled.input`
+
+`
