@@ -39,7 +39,7 @@ function FormOne() {
 
         <label>
           Seu nome completo
-          <input type={'text'} onChange={handleName} autofocus />
+          <input type={'text'} onChange={handleName} autoFocus />
         </label>
 
         <C.Button onClick={() => nextStep()}>Próximo</C.Button>
