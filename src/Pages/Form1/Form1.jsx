@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as C from './styles'
 import { useForm } from '../../Contexts/FormContexts'
@@ -9,6 +9,13 @@ function FormOne() {
 
   const Redirect = useNavigate()
   const { state, dispatch } = useForm()
+
+  useEffect(()=>{
+    dispatch({
+      type: 'SET_CURRENT_STEP',
+      payload: 1
+    })
+  }, [])
 
   function nextStep(){
     if(state.name !== ''){
