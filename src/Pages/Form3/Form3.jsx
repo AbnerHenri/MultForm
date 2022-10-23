@@ -17,14 +17,9 @@ function FormOne() {
     })
   }, [])
 
-  // function nextStep(){
-  //   if(state.name !== ''){
-  //     Redirect('/step2')
-  //   }else{
-  //     alert('Preencha os dados necessários')
-  //   }
-    
-  // }
+  function nextStep(url){
+      Redirect(url)
+  }
 
   return(
     <Theme>
@@ -39,7 +34,7 @@ function FormOne() {
 
       
 
-        <C.Button onClick={() => nextStep()}>Próximo</C.Button>
+        <C.Button onClick={() => nextStep('/step2')}>Voltar</C.Button>
       </C.Container>
     </Theme>
   );
