@@ -35,6 +35,14 @@ export const Desc = styled.div`
 
 export const IconArea = styled.div`
 
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    background-color: #449bac;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const Point = styled.div`
