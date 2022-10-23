@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as C from './styles'
 import { useForm } from '../../Contexts/FormContexts'
@@ -10,21 +10,21 @@ function FormOne() {
   const Redirect = useNavigate()
   const { state, dispatch } = useForm()
 
-  function nextStep(){
-    if(state.name !== ''){
-      Redirect('/step2')
-    }else{
-      alert('Preencha os dados necessários')
-    }
-    
-  }
-
-  function handleName(e){
-    dispatch({ 
-      type : 'SET_NAME',
-      payload : e.target.value
+  useEffect(()=>{
+    dispatch({
+      type : 'SET_CURRENT_STEP',
+      payload : 3
     })
-  }
+  }, [])
+
+  // function nextStep(){
+  //   if(state.name !== ''){
+  //     Redirect('/step2')
+  //   }else{
+  //     alert('Preencha os dados necessários')
+  //   }
+    
+  // }
 
   return(
     <Theme>
