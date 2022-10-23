@@ -47,4 +47,11 @@ export const IconArea = styled.div`
 
 export const Point = styled.div`
 
+    width : 6px;
+    height : 6px;
+    border : 3px solid #449bac;
+    border-radius: 50%;
+    margin-left : 30px;
+    margin-right : -80px;
+    background-color: rgba(70,39,171,1);
 `
