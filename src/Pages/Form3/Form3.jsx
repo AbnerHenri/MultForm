@@ -35,6 +35,14 @@ function FormOne() {
     })
   }
 
+  function PrintData(){
+    if(state.email === '' || state.github === ''){
+      alert('Preencha os campos necessários')
+    }else{
+      console.log(state)
+    }
+  }
+
   return(
     <Theme>
       <C.Container>
@@ -50,6 +58,7 @@ function FormOne() {
         <C.Input type={'url'} value={state.github} onChange={HandleGithubChange} />
 
         <C.Button onClick={() => nextStep('/step2')}>Voltar</C.Button>
+        <C.Button onClick={() => PrintData() }>Enviar</C.Button>
       </C.Container>
     </Theme>
   );
