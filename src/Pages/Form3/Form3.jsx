@@ -28,6 +28,13 @@ function FormOne() {
     })
   }
 
+  function HandleGithubChange(e) {
+    dispatch({
+      type: 'SET_GITHUB',
+      payload: e.target.value
+    })
+  }
+
   return(
     <Theme>
       <C.Container>
@@ -40,7 +47,7 @@ function FormOne() {
         <hr></hr>
 
         <C.Input type={'email'} value={state.email} onChange={HandleEmailChange}/>
-        {/* <C.Input type={'url'} value={state.github} onChange={HandleGithubChange} /> */}
+        <C.Input type={'url'} value={state.github} onChange={HandleGithubChange} />
 
         <C.Button onClick={() => nextStep('/step2')}>Voltar</C.Button>
       </C.Container>
