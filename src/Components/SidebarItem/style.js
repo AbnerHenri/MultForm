@@ -54,7 +54,7 @@ export const Point = styled.div`
 
     width : 6px;
     height : 6px;
-    border : 3px solid #449bac;
+    border : 3px solid #808080;
     border-radius: 50%;
     margin-left : 30px;
     margin-right : -37px;

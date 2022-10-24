@@ -7,8 +7,10 @@ import Profile from '../../Assets/perfil.png'
 import Email from '../../Assets/o-email.png'
 import Book from '../../Assets/history-book.png'
 
-const Theme = ({ children }) => {
+import { useForm } from '../../Contexts/FormContexts'
 
+const Theme = ({ children }) => {
+    const { state } = useForm()
 
     return(
         <C.Container>
