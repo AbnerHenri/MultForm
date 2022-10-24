@@ -15,6 +15,12 @@ function FormOne() {
       type : 'SET_CURRENT_STEP',
       payload : 3
     })
+
+    if(state.name === ''){
+      Redirect('/')
+      alert('Preencha todos os campos antes de ir a próxima página')
+    }
+    
   }, [])
 
   function nextStep(url){
