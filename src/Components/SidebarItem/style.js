@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
+    opacity: ${props => props.actived ? 1 : 0.5 };
+
     margin : 30px;
     cursor : pointer;
 
@@ -54,9 +56,9 @@ export const Point = styled.div`
 
     width : 6px;
     height : 6px;
-    border : 3px solid #808080;
+    border : 3px solid #449bac;
     border-radius: 50%;
     margin-left : 30px;
     margin-right : -37px;
-    background-color: rgba(70,39,171,1);
+    background-color: ${props => props.actived ? '#449bac' : '#808080' };
 `

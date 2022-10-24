@@ -10,7 +10,8 @@ import Book from '../../Assets/history-book.png'
 import { useForm } from '../../Contexts/FormContexts'
 
 const Theme = ({ children }) => {
-    const { state } = useForm()
+
+    const { state } = useForm();
 
     return(
         <C.Container>
@@ -24,6 +25,7 @@ const Theme = ({ children }) => {
                             description={'Se Identifique'} 
                             icon={Profile} 
                             path={'/'} 
+                            actived={state.currentStep === 1}
                         />
 
                         <SidebarItem 
@@ -31,6 +33,7 @@ const Theme = ({ children }) => {
                             description={'Seu Nível'} 
                             icon={Book} 
                             path={'/step2'} 
+                            actived={state.currentStep === 2}
                         />
 
                         <SidebarItem 
@@ -38,6 +41,7 @@ const Theme = ({ children }) => {
                             description={'Como te achar?'}
                             icon={Email}
                             path={'/step3'}
+                            actived={state.currentStep === 3}
                         />
                     </C.Sidebar>
 

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 function SidebarItem(props) {
   return(
-    <C.Container>
+    <C.Container actived={props.actived}>
         <Link to={props.path}>
             <C.Info>
                 <C.Title>{props.title}</C.Title>
@@ -15,8 +15,8 @@ function SidebarItem(props) {
 
             <C.IconArea>
                 <img src={props.icon} />
-                <C.Point></C.Point>
             </C.IconArea>
+          <C.Point actived={props.actived} />
         </Link>
     </C.Container>
   );
