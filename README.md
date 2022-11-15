@@ -8,11 +8,11 @@ A ideia é aprender a criar uma forma mais intuitiva de cadastro, então não h�
 
 ![alt text](src/Assets/Anime.gif)
 
-<br><br>
+<br>
 
 ## Dependencies 🚀
 
-✅ React
-✅ React-dom
-✅ React-router
+✅ React<br>
+✅ React-dom<br>
+✅ React-router<br>
 ✅ Styled-components
